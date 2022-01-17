@@ -1,0 +1,19 @@
+<aura:component >
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+	<div class="row">
+<p class="title">Single Selection</p>
+<ui:inputSelect class="single" aura:id="InputSelectSingle" change="{!c.onSingleSelectChange}">
+
+            <ui:inputSelectOption text="Any"/>
+            <ui:inputSelectOption text="Open" value="true"/>
+            <ui:inputSelectOption text="Closed"/>
+            <ui:inputSelectOption text="Closed Won"/>
+        	<ui:inputSelectOption text="Prospecting"/>
+            <ui:inputSelectOption text="Qualification"/>
+            <ui:inputSelectOption text="Needs Analysis"/>
+            <ui:inputSelectOption text="Closed Lost"/>
+    </ui:inputSelect>
+    <p>Selected Item:</p>
+      <p><ui:outputText class="result" aura:id="singleResult" value="" /></p>
+</div>  
+</aura:component>
