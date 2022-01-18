@@ -4,6 +4,7 @@ global with sharing class ApexSecurityRest {
     global static Contact doGet() {
         Id recordId = RestContext.request.params.get('id');
         Contact result;
+        Contact result2;
         if (recordId == null) {
             throw new FunctionalException('Id parameter is required');
         }
