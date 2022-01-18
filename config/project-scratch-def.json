@@ -1,6 +1,9 @@
 {
-  "orgName": "Demo company",
+  "orgName": "Optional Scrach Demo company",
   "edition": "Developer",
+  "adminEmail": "satyanarayana@brazengroup.com",
+  "description": "This org is created for the Circle Ci config",
+  "hasSampleData":true,
   "features": ["EnableSetPasswordInApi"],
   "settings": {
     "lightningExperienceSettings": {
